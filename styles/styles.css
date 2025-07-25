@@ -37,35 +37,29 @@ body{
 .border-primarydark{
     border-color: var(--color-primarydark);
 }
-#btn_skew {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
+:root {
+  --color-primary: #165831; /* Your theme primary color */
 }
 
-#btn_skew a {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    clip-path: polygon(0 0, 100% 0, 94% 100%, 0 100%);
-    background: var(--color-primary);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
+/* #btn_skew {
+  position: relative;
+  overflow: visible;
+}
+#btn_skew .btn-content {
+  background: var(--color-primary);
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s ease;
+}
+#btn_skew .arrow-icon {
+  clip-path: polygon(30% 0, 100% 0, 70% 100%, 0% 100%);
+  transition: transform 0.3s ease;
+  z-index: 10;
 }
 
-#btn_skew img {
-    clip-path: polygon(30% 0, 100% 0, 70% 100%, 0 100%);
-    transition: all 0.3s ease;
-}
-
-
-#btn_skew:hover img {
-    transform: translateX(3px);
-}
-
-#btn_skew a:active,
-#btn_skew a:focus {
-    transform: translateY(0);
-    outline: none;
-}
+#btn_skew .btn-content:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+} */

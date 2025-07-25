@@ -4,8 +4,12 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+body{
+    background: white;
+}
 :root {
   --color-primary: #165831;
+  --color-secondary: #343434;
 }
 
 .bg-primary {
@@ -16,6 +20,42 @@
   color: var(--color-primary);
 }
 
+.text-secondary{
+    color: var(--color-secondary)
+}
+
 .border-primary {
   border-color: var(--color-primary);
+}
+#btn_skew {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+#btn_skew a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 94% 100%, 0 100%);
+    background: var(--color-primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#btn_skew img {
+    clip-path: polygon(30% 0, 100% 0, 70% 100%, 0 100%);
+    transition: all 0.3s ease;
+}
+
+
+#btn_skew:hover img {
+    transform: translateX(3px);
+}
+
+#btn_skew a:active,
+#btn_skew a:focus {
+    transform: translateY(0);
+    outline: none;
 }
